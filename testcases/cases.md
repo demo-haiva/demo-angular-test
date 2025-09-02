@@ -1,1 +1,1 @@
-Test cases for all selected business requirements (SCRUM-10, SCRUM-9, SCRUM-8, SCRUM-7, SCRUM-6) were generated in the required format and user confirmed to commit.
+All test cases for requirements SCRUM-6, SCRUM-7, SCRUM-8, SCRUM-9, and SCRUM-10 were generated covering all described scenarios (titles, preconditions, steps, expected results) and are now being passed to Code integrator for repository commit.
