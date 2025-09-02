@@ -1,59 +1,52 @@
+---
 SCRUM-10: Navigating via secondary menu item routes correctly
-Test Case Title: Verify navigation via secondary menu item routes
-Preconditions:
-- User is logged in
-- Secondary menu items are visible
+Test Case Title: Secondary Menu Item Navigation
+Preconditions: User is logged in and secondary menu items are visible.
 Test Steps:
-1. Identify a secondary menu item <title>
-2. Click on the <title> menu item
-Expected Result:
-- The router navigates to <url>
-- The item <title> has the "selected" active class
-
+1. Verify the presence of a secondary menu item "<title>".
+2. Click on the "<title>" menu item.
+3. Observe navigation action.
+4. Check if "<title>" menu item has "selected" active class.
+Expected Result: Router navigates to "<url>" and the item "<title>" is marked as selected.
+---
 SCRUM-9: Navigating via primary menu item routes correctly and sets active state
-Test Case Title: Verify navigation and active state of primary menu items
-Preconditions:
-- User is logged in
-- Primary menu items with icons are visible
+Test Case Title: Primary Menu Item Navigation and Active State
+Preconditions: User is logged in; primary menu items with icons are visible.
 Test Steps:
-1. Identify a primary menu item <title> with icon <icon>
-2. Click on the <title> menu item
-Expected Result:
-- The router navigates to <url>
-- The menu item <title> has the "selected" active class
-- All other menu items do not have the "selected" class
-- On mobile, the menu closes after navigation and focus moves to the main page heading
-
+1. Verify presence of primary menu item "<title>" with icon "<icon>".
+2. Click the "<title>" menu item.
+3. Observe navigation action.
+4. Check "selected" active class on "<title>".
+5. Ensure other menu items do not have "selected" class.
+6. On mobile, confirm the menu closes and focus moves to main page heading.
+Expected Result: Router navigates to "<url>", only the selected menu item is active, and mobile behavior is correct.
+---
 SCRUM-8: Switching between breakpoints recalculates the layout
-Test Case Title: Verify layout recalculation on breakpoint changes
-Preconditions:
-- App is open on a large screen
+Test Case Title: Responsive Layout Breakpoint Switching
+Preconditions: App is open on a large screen (≥ lg breakpoint).
 Test Steps:
-1. Shrink viewport below the lg breakpoint
-2. Expand viewport back to ≥ lg breakpoint
-Expected Result:
-- Menu switches to overlay mode without layout breakage when shrunk below lg breakpoint
-- Menu returns to persistent mode when expanded back to ≥ lg breakpoint
-
+1. Confirm app layout at large screen.
+2. Shrink viewport below lg breakpoint.
+3. Check if menu switches to overlay mode without breakage.
+4. Expand viewport back to ≥ lg.
+5. Verify menu returns to persistent mode.
+Expected Result: Menu transitions correctly between overlay and persistent modes with no layout issues.
+---
 SCRUM-7: Menu behaves as overlay on small screens
-Test Case Title: Verify overlay menu behavior on small screens
-Preconditions:
-- Viewport width is less than the lg breakpoint
+Test Case Title: Overlay Menu Behavior on Small Screens
+Preconditions: Viewport width is less than lg breakpoint; app is loaded.
 Test Steps:
-1. Load the app
-2. Open the menu
-3. Close the menu
-Expected Result:
-- Menu is hidden by default when app loads
-- Opening the menu displays it as an overlay
-- Closing the menu returns focus to the previously focused element
-
+1. Load app with small viewport.
+2. Check that menu is hidden by default.
+3. Open the menu and verify it displays as overlay.
+4. Close the menu and ensure focus returns to previously focused element.
+Expected Result: Menu is hidden initially, appears as overlay when opened, and focus behavior is correct when closed.
+---
 SCRUM-6: Split-pane shows persistent menu on large screens
-Test Case Title: Verify persistent menu in split-pane layout on large screens
-Preconditions:
-- Viewport width is ≥ the lg breakpoint
+Test Case Title: Persistent Menu on Large Screens
+Preconditions: Viewport width is ≥ lg breakpoint; app is loaded.
 Test Steps:
-1. Load the app with large screen viewport
-Expected Result:
-- Menu is visible as a persistent left pane
-- Main content renders in the "main-content" outlet without overlaying the menu,
+1. Load app at large viewport width.
+2. Confirm menu is visible as persistent left pane.
+3. Check that main content renders in "main-content" outlet without overlaying menu.
+Expected Result: Menu persists on the left and main content does not overlap with it.
