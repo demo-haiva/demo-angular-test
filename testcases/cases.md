@@ -1,1 +1,1 @@
-Test cases for all requirements (SCRUM-10, SCRUM-9, SCRUM-8, SCRUM-7, SCRUM-6) were generated in the format of test case title, preconditions, test steps and expected result.
+Test cases for all selected business requirements (SCRUM-10, SCRUM-9, SCRUM-8, SCRUM-7, SCRUM-6) were generated in the required format and user confirmed to commit.
