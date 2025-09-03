@@ -1,0 +1,1 @@
+Playwright test scripts were generated for the 'demo-angular' repository based on test cases SCRUM-10, SCRUM-9, SCRUM-8, SCRUM-7, and SCRUM-6. Scripts included login, logout, profile update, user registration, and password reset functionalities as per test case requirements. All scripts are ready for repository commit.
